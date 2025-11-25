@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda F1 - Catálogo Oficial</title>
+    <title>Tienda F1 - Catálogo GIGANTE 2025</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Formula1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -21,7 +21,7 @@
                     <li><a href="catalogo.html" class="active">Tienda</a></li>
                     <li><a href="#">Equipos</a></li>
                     <li><a href="#">Pilotos</a></li>
-                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Ofertas</a></li>
                     <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
                 </ul>
             </nav>
@@ -30,47 +30,397 @@
 
     <main class="catalogo-page">
         <div class="container">
-            <h1 class="catalogo-title">Colección Exclusiva F1 2023</h1>
-            
-            <div class="product-list">
-                
-                <div class="product-card" data-product-id="hamilton-helmet">
-                    <img src="https://i.ibb.co/L5hYh81/helmet-main.webp" alt="Casco Lewis Hamilton" class="card-image">
-                    <div class="card-info">
-                        <h2>Casco Hamilton Réplica 2023</h2>
-                        <p class="card-category">Coleccionable</p>
-                        <p class="card-price">€ 499.99</p>
-                        <button class="view-btn">Ver Detalles</button>
-                    </div>
-                </div>
+            <h1 class="catalogo-title">Mega Store F1 Season 2025</h1>
 
-                <div class="product-card" data-product-id="verstappen-shirt">
-                    <img src="https://i.ibb.co/5cQ3W9n/verstappen-shirt.webp" alt="Camiseta Max Verstappen" class="card-image">
-                    <div class="card-info">
-                        <h2>Camiseta Oficial Oracle Red Bull</h2>
-                        <p class="card-category">Ropa</p>
-                        <p class="card-price">€ 75.00</p>
-                        <button class="view-btn">Ver Detalles</button>
-                    </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar por piloto (ej. Alonso), equipo o producto...">
                 </div>
-
-                <div class="product-card" data-product-id="leclerc-jacket">
-                    <img src="https://i.ibb.co/VMyh0V8/leclerc-jacket.webp" alt="Chaqueta Ferrari Leclerc" class="card-image">
-                    <div class="card-info">
-                        <h2>Chaqueta Charles Leclerc Fila</h2>
-                        <p class="card-category">Ropa</p>
-                        <p class="card-price">€ 189.99</p>
-                        <button class="view-btn">Ver Detalles</button>
-                    </div>
+                <div class="filter-tags">
+                    <button onclick="filterProducts('all')" class="tag active">Todos</button>
+                    <button onclick="filterProducts('Ropa')" class="tag">Ropa</button>
+                    <button onclick="filterProducts('Accesorios')" class="tag">Accesorios</button>
+                    <button onclick="filterProducts('Coleccionables')" class="tag">Coleccionables</button>
                 </div>
-
             </div>
+            
+            <h2 class="team-heading ferrari">🔴 Scuderia Ferrari HP</h2>
+            <div class="product-list">
+                <div class="product-card" data-product-id="fer-lec-jacket">
+                    <img src="https://i.ibb.co/VMyh0V8/leclerc-jacket.webp" alt="Chaqueta Leclerc" class="card-image">
+                    <div class="card-info"><h2>Chaqueta Leclerc Fila 2025</h2><p class="card-category">Ropa Premium</p><p class="card-price">€ 189.99</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="fer-lec-cap">
+                    <img src="https://via.placeholder.com/300/E10600/FFFFFF?text=Gorra+Leclerc+16" alt="Gorra Leclerc" class="card-image">
+                    <div class="card-info"><h2>Gorra Charles Leclerc #16</h2><p class="card-category">Accesorios</p><p class="card-price">€ 50.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="fer-lec-shirt">
+                    <img src="https://via.placeholder.com/300/E10600/FFFFFF?text=Camiseta+Leclerc" alt="Camiseta Leclerc" class="card-image">
+                    <div class="card-info"><h2>Camiseta Leclerc Mónaco Ed.</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 75.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                
+                <div class="product-card" data-product-id="fer-ham-cap">
+                    <img src="https://i.ibb.co/X3YvL2g/ferrari-hamilton-cap.webp" alt="Gorra Hamilton" class="card-image">
+                    <div class="card-info"><h2>Gorra Lewis Hamilton #44</h2><p class="card-category">Accesorios</p><p class="card-price">€ 55.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="fer-ham-shirt">
+                    <img src="https://via.placeholder.com/300/000000/E10600?text=Camiseta+Hamilton" alt="Camiseta Hamilton" class="card-image">
+                    <div class="card-info"><h2>Camiseta Hamilton Debut</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 80.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="fer-ham-model">
+                    <img src="https://via.placeholder.com/300/E10600/FFFFFF?text=Ferrari+SF25+LH" alt="Modelo Hamilton" class="card-image">
+                    <div class="card-info"><h2>Modelo SF-25 Hamilton (1:43)</h2><p class="card-category">Coleccionables</p><p class="card-price">€ 95.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+
+                <div class="product-card" data-product-id="fer-polo">
+                    <img src="https://i.ibb.co/F1Y2Z9R/ferrari-polo.webp" alt="Polo Ferrari" class="card-image">
+                    <div class="card-info"><h2>Polo Oficial Scuderia 2025</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 95.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="fer-rain">
+                    <img src="https://via.placeholder.com/300/E10600/000000?text=Chubasquero+Ferrari" alt="Chubasquero" class="card-image">
+                    <div class="card-info"><h2>Chubasquero Paddock</h2><p class="card-category">Ropa Técnica</p><p class="card-price">€ 160.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="fer-bag">
+                    <img src="https://via.placeholder.com/300/000000/E10600?text=Mochila+Ferrari" alt="Mochila" class="card-image">
+                    <div class="card-info"><h2>Mochila Puma Ferrari</h2><p class="card-category">Accesorios</p><p class="card-price">€ 85.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="fer-key">
+                    <img src="https://i.ibb.co/F1Y2Z9R/ferrari-keychain.webp" alt="Llavero" class="card-image">
+                    <div class="card-info"><h2>Llavero Cavallino Rampante</h2><p class="card-category">Accesorios</p><p class="card-price">€ 20.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
+            <h2 class="team-heading aston-martin">🟢 Aston Martin Aramco</h2>
+            <div class="product-list">
+                <div class="product-card" data-product-id="am-alo-cap">
+                    <img src="https://via.placeholder.com/300/005C4F/CAFF70?text=Gorra+Alonso+14" alt="Gorra Alonso" class="card-image">
+                    <div class="card-info"><h2>Gorra Kimoa Alonso 2025</h2><p class="card-category">Accesorios</p><p class="card-price">€ 50.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="am-alo-shirt">
+                    <img src="https://via.placeholder.com/300/005C4F/FFFFFF?text=Camiseta+Alonso" alt="Camiseta Alonso" class="card-image">
+                    <div class="card-info"><h2>Camiseta Fernando Alonso</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 70.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="am-alo-flag">
+                    <img src="https://via.placeholder.com/300/CAFF70/005C4F?text=Bandera+Alonso" alt="Bandera Alonso" class="card-image">
+                    <div class="card-info"><h2>Bandera 'El Nano' 14</h2><p class="card-category">Fan Zone</p><p class="card-price">€ 30.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="am-alo-helmet">
+                    <img src="https://via.placeholder.com/300/FFFF00/000000?text=Mini+Casco+Alonso" alt="Casco Alonso" class="card-image">
+                    <div class="card-info"><h2>Mini Casco Alonso (1:2)</h2><p class="card-category">Coleccionables</p><p class="card-price">€ 180.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+
+                <div class="product-card" data-product-id="am-str-cap">
+                    <img src="https://via.placeholder.com/300/005C4F/FFFFFF?text=Gorra+Stroll" alt="Gorra Stroll" class="card-image">
+                    <div class="card-info"><h2>Gorra Lance Stroll #18</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="am-str-shirt">
+                    <img src="https://via.placeholder.com/300/FFFFFF/005C4F?text=Camiseta+Stroll" alt="Camiseta Stroll" class="card-image">
+                    <div class="card-info"><h2>Camiseta Lance Stroll</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 65.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+
+                <div class="product-card" data-product-id="am-jacket">
+                    <img src="https://via.placeholder.com/300/005C4F/000000?text=Chaqueta+AM" alt="Chaqueta AM" class="card-image">
+                    <div class="card-info"><h2>Chaqueta Softshell AM</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 150.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="am-gilet">
+                    <img src="https://via.placeholder.com/300/003300/FFFFFF?text=Chaleco+AM" alt="Chaleco AM" class="card-image">
+                    <div class="card-info"><h2>Chaleco Acolchado Aramco</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 110.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="am-bottle">
+                    <img src="https://via.placeholder.com/300/CAFF70/000000?text=Botella+AM" alt="Botella" class="card-image">
+                    <div class="card-info"><h2>Botella de Agua Oficial</h2><p class="card-category">Accesorios</p><p class="card-price">€ 25.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="am-umbrella">
+                    <img src="https://via.placeholder.com/300/005C4F/FFFFFF?text=Paraguas+AM" alt="Paraguas" class="card-image">
+                    <div class="card-info"><h2>Paraguas de Golf AM</h2><p class="card-category">Accesorios</p><p class="card-price">€ 60.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
+            <h2 class="team-heading red-bull">🔵 Oracle Red Bull Racing</h2>
+            <div class="product-list">
+                <div class="product-card" data-product-id="rbr-ver-cap">
+                    <img src="https://i.ibb.co/xY9xR7X/redbull-cap.webp" alt="Gorra Max" class="card-image">
+                    <div class="card-info"><h2>Gorra Max Verstappen #1</h2><p class="card-category">Accesorios</p><p class="card-price">€ 50.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="rbr-ver-orange">
+                    <img src="https://via.placeholder.com/300/FF6600/111111?text=Camiseta+Orange" alt="Camiseta Orange" class="card-image">
+                    <div class="card-info"><h2>Camiseta Orange Army</h2><p class="card-category">Fan Edition</p><p class="card-price">€ 65.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="rbr-ver-hoodie">
+                    <img src="https://via.placeholder.com/300/000044/FF6600?text=Sudadera+Max" alt="Sudadera Max" class="card-image">
+                    <div class="card-info"><h2>Sudadera Campeón</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 110.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+
+                <div class="product-card" data-product-id="rbr-tsu-cap">
+                    <img src="https://via.placeholder.com/300/FFFFFF/000044?text=Gorra+Yuki" alt="Gorra Yuki" class="card-image">
+                    <div class="card-info"><h2>Gorra Plana Yuki Tsunoda</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="rbr-tsu-shirt">
+                    <img src="https://i.ibb.co/5cQ3W9n/verstappen-shirt.webp" alt="Camiseta Yuki" class="card-image">
+                    <div class="card-info"><h2>Camiseta Yuki RBR 2025</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 75.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+
+                <div class="product-card" data-product-id="rbr-softshell">
+                    <img src="https://via.placeholder.com/300/000044/FF0000?text=Chaqueta+RBR" alt="Chaqueta RBR" class="card-image">
+                    <div class="card-info"><h2>Chaqueta Castore Team</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 180.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="rbr-backpack">
+                    <img src="https://via.placeholder.com/300/000066/FFCC00?text=Mochila+RBR" alt="Mochila" class="card-image">
+                    <div class="card-info"><h2>Mochila Oficial RBR</h2><p class="card-category">Accesorios</p><p class="card-price">€ 85.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="rbr-model">
+                    <img src="https://via.placeholder.com/300/000044/FFFFFF?text=RB21+Model" alt="Modelo RB21" class="card-image">
+                    <div class="card-info"><h2>Modelo RB21 (1:18)</h2><p class="card-category">Coleccionables</p><p class="card-price">€ 140.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="rbr-mug">
+                    <img src="https://via.placeholder.com/300/FFFFFF/000044?text=Taza+RBR" alt="Taza" class="card-image">
+                    <div class="card-info"><h2>Taza Red Bull Racing</h2><p class="card-category">Hogar</p><p class="card-price">€ 22.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="rbr-socks">
+                    <img src="https://via.placeholder.com/300/000044/FF0000?text=Calcetines+RBR" alt="Calcetines" class="card-image">
+                    <div class="card-info"><h2>Pack Calcetines Team</h2><p class="card-category">Ropa</p><p class="card-price">€ 35.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
+            <h2 class="team-heading mercedes">⚫ Mercedes-AMG Petronas</h2>
+            <div class="product-list">
+                <div class="product-card" data-product-id="mer-rus-cap">
+                    <img src="https://via.placeholder.com/300/000000/00A99D?text=Gorra+Russell" alt="Gorra Russell" class="card-image">
+                    <div class="card-info"><h2>Gorra George Russell #63</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mer-rus-hoodie">
+                    <img src="https://i.ibb.co/7Kz1D7N/mercedes-hoodie.webp" alt="Sudadera Russell" class="card-image">
+                    <div class="card-info"><h2>Sudadera Russell 63</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 115.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mer-rus-shirt">
+                    <img src="https://via.placeholder.com/300/FFFFFF/000000?text=Camiseta+Russell" alt="Camiseta Russell" class="card-image">
+                    <div class="card-info"><h2>Camiseta Russell GR63</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 75.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+
+                <div class="product-card" data-product-id="antonelli-helmet">
+                    <img src="https://i.ibb.co/L5hYh81/helmet-main.webp" alt="Casco Antonelli" class="card-image">
+                    <div class="card-info"><h2>Casco Kimi Debut 2025</h2><p class="card-category">Coleccionables</p><p class="card-price">€ 480.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mer-kimi-shirt">
+                    <img src="https://via.placeholder.com/300/000000/00A99D?text=Camiseta+Kimi" alt="Camiseta Kimi" class="card-image">
+                    <div class="card-info"><h2>Camiseta Kimi Antonelli</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 70.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mer-kimi-cap">
+                    <img src="https://via.placeholder.com/300/00A99D/FFFFFF?text=Gorra+Kimi+12" alt="Gorra Kimi" class="card-image">
+                    <div class="card-info"><h2>Gorra Kimi Antonelli #12</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+
+                <div class="product-card" data-product-id="mer-tshirt">
+                    <img src="https://i.ibb.co/3s8J7Fp/mercedes-tshirt.webp" alt="Camiseta Team" class="card-image">
+                    <div class="card-info"><h2>Camiseta Team Fanwear</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 80.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mer-jacket">
+                    <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Chaqueta+Mercedes" alt="Chaqueta" class="card-image">
+                    <div class="card-info"><h2>Chaqueta Lluvia AMG</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 190.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mer-mug">
+                    <img src="https://i.ibb.co/zX9yV2b/mercedes-mug.webp" alt="Taza" class="card-image">
+                    <div class="card-info"><h2>Taza Térmica Mercedes</h2><p class="card-category">Hogar</p><p class="card-price">€ 25.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mer-wallet">
+                    <img src="https://via.placeholder.com/300/111111/00A99D?text=Cartera+Mercedes" alt="Cartera" class="card-image">
+                    <div class="card-info"><h2>Cartera de Piel AMG</h2><p class="card-category">Accesorios</p><p class="card-price">€ 60.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
+            <h2 class="team-heading mclaren">🟠 McLaren F1 Team</h2>
+            <div class="product-list">
+                <div class="product-card" data-product-id="mcl-nor-cap">
+                    <img src="https://via.placeholder.com/300/CCFF00/000000?text=Gorra+Neon+Lando" alt="Gorra Lando" class="card-image">
+                    <div class="card-info"><h2>Gorra Lando Neón</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mcl-nor-shirt">
+                    <img src="https://via.placeholder.com/300/FF8700/000000?text=Camiseta+Lando" alt="Camiseta Lando" class="card-image">
+                    <div class="card-info"><h2>Camiseta Lando Norris #4</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 75.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mcl-nor-hoodie">
+                    <img src="https://via.placeholder.com/300/111111/CCFF00?text=Sudadera+Lando" alt="Sudadera Lando" class="card-image">
+                    <div class="card-info"><h2>Sudadera LN4 Quadrant</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 110.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+
+                <div class="product-card" data-product-id="mcl-pia-cap">
+                    <img src="https://via.placeholder.com/300/FF8700/FFFFFF?text=Gorra+Piastri" alt="Gorra Piastri" class="card-image">
+                    <div class="card-info"><h2>Gorra Oscar Piastri #81</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mcl-pia-shirt">
+                    <img src="https://via.placeholder.com/300/000000/FF8700?text=Camiseta+Piastri" alt="Camiseta Piastri" class="card-image">
+                    <div class="card-info"><h2>Camiseta Piastri 2025</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 75.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+
+                <div class="product-card" data-product-id="mcl-polo">
+                    <img src="https://via.placeholder.com/300/FF8700/333333?text=Polo+McLaren" alt="Polo Team" class="card-image">
+                    <div class="card-info"><h2>Polo Oficial McLaren</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 90.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mcl-jacket">
+                    <img src="https://via.placeholder.com/300/333333/FF8700?text=Chaqueta+McLaren" alt="Chaqueta" class="card-image">
+                    <div class="card-info"><h2>Chaqueta Impermeable</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 160.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mcl-bottle">
+                    <img src="https://via.placeholder.com/300/FF8700/000000?text=Botella+McLaren" alt="Botella" class="card-image">
+                    <div class="card-info"><h2>Botella Hidratación</h2><p class="card-category">Accesorios</p><p class="card-price">€ 28.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mcl-model">
+                    <img src="https://via.placeholder.com/300/FF8700/FFFFFF?text=MCL39+Model" alt="Modelo MCL39" class="card-image">
+                    <div class="card-info"><h2>Modelo MCL39 (1:18)</h2><p class="card-category">Coleccionables</p><p class="card-price">€ 150.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="mcl-phone">
+                    <img src="https://via.placeholder.com/300/111111/FF8700?text=Funda+Movil" alt="Funda Movil" class="card-image">
+                    <div class="card-info"><h2>Funda Móvil Carbono</h2><p class="card-category">Accesorios</p><p class="card-price">€ 35.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
+            <h2 class="team-heading williams">🔵 Williams Racing</h2>
+            <div class="product-list">
+                <div class="product-card" data-product-id="wil-sai-cap">
+                    <img src="https://via.placeholder.com/300/00A3E0/FFFFFF?text=Gorra+Sainz+55" alt="Gorra Sainz" class="card-image">
+                    <div class="card-info"><h2>Gorra Carlos Sainz Williams</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="wil-sai-shirt">
+                    <img src="https://i.ibb.co/f4Z6D8p/williams-sainz-tshirt.webp" alt="Camiseta Sainz" class="card-image">
+                    <div class="card-info"><h2>Camiseta Sainz Smooth Operator</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 70.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="wil-alb-cap">
+                    <img src="https://i.ibb.co/n1b2H7Q/albon-cap.webp" alt="Gorra Albon" class="card-image">
+                    <div class="card-info"><h2>Gorra Alex Albon</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="wil-hoodie">
+                    <img src="https://i.ibb.co/S1jXw5s/williams-hoodie.webp" alt="Sudadera Team" class="card-image">
+                    <div class="card-info"><h2>Sudadera Williams Heritage</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 99.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="wil-shirt">
+                    <img src="https://via.placeholder.com/300/FFFFFF/00A3E0?text=Camiseta+Williams" alt="Camiseta Team" class="card-image">
+                    <div class="card-info"><h2>Camiseta Equipo 2025</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 60.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="wil-lanyard">
+                    <img src="https://i.ibb.co/n1b2H7Q/williams-lanyard.webp" alt="Lanyard" class="card-image">
+                    <div class="card-info"><h2>Cordón Williams</h2><p class="card-category">Accesorios</p><p class="card-price">€ 15.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
+            <h2 class="team-heading alpine">🔵 BWT Alpine F1 Team</h2>
+            <div class="product-list">
+                <div class="product-card" data-product-id="alp-gas-cap">
+                    <img src="https://via.placeholder.com/300/0090FF/FFC0CB?text=Gorra+Gasly" alt="Gorra Gasly" class="card-image">
+                    <div class="card-info"><h2>Gorra Pierre Gasly</h2><p class="card-category">Accesorios</p><p class="card-price">€ 42.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="alp-gas-shirt">
+                    <img src="https://via.placeholder.com/300/FFFFFF/0090FF?text=Camiseta+Gasly" alt="Camiseta Gasly" class="card-image">
+                    <div class="card-info"><h2>Camiseta Gasly 10</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 65.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="alp-doo-shirt">
+                    <img src="https://via.placeholder.com/300/000000/0090FF?text=Camiseta+Doohan" alt="Camiseta Doohan" class="card-image">
+                    <div class="card-info"><h2>Camiseta Jack Doohan</h2><p class="card-category">Ropa de Piloto</p><p class="card-price">€ 65.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                 <div class="product-card" data-product-id="alp-team-shirt">
+                    <img src="https://via.placeholder.com/300/0090FF/FFFFFF?text=Camiseta+Alpine" alt="Camiseta Alpine" class="card-image">
+                    <div class="card-info"><h2>Camiseta Equipo Alpine</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 75.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                 <div class="product-card" data-product-id="alp-model">
+                    <img src="https://via.placeholder.com/300/FFC0CB/0090FF?text=Alpine+A525" alt="Modelo Alpine" class="card-image">
+                    <div class="card-info"><h2>Modelo A525 (1:43)</h2><p class="card-category">Coleccionables</p><p class="card-price">€ 80.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="alp-cap-team">
+                    <img src="https://via.placeholder.com/300/000000/FFC0CB?text=Gorra+Equipo" alt="Gorra Team" class="card-image">
+                    <div class="card-info"><h2>Gorra Oficial Equipo</h2><p class="card-category">Accesorios</p><p class="card-price">€ 40.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
+            <h2 class="team-heading racing-bulls">⚪ Visa Cash App RB</h2>
+            <div class="product-list">
+                <div class="product-card" data-product-id="vcarb-law-cap">
+                    <img src="https://via.placeholder.com/300/466E87/FFFFFF?text=Gorra+Lawson" alt="Gorra Lawson" class="card-image">
+                    <div class="card-info"><h2>Gorra Liam Lawson</h2><p class="card-category">Accesorios</p><p class="card-price">€ 40.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                 <div class="product-card" data-product-id="vcarb-had-cap">
+                    <img src="https://via.placeholder.com/300/FFFFFF/466E87?text=Gorra+Hadjar" alt="Gorra Hadjar" class="card-image">
+                    <div class="card-info"><h2>Gorra Isack Hadjar</h2><p class="card-category">Accesorios</p><p class="card-price">€ 40.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="vcarb-shirt">
+                    <img src="https://via.placeholder.com/300/FFFFFF/466E87?text=Camiseta+VCARB" alt="Camiseta VCARB" class="card-image">
+                    <div class="card-info"><h2>Camiseta Oficial Equipo</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 70.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                 <div class="product-card" data-product-id="vcarb-hoodie">
+                    <img src="https://via.placeholder.com/300/466E87/FFFFFF?text=Sudadera+VCARB" alt="Sudadera VCARB" class="card-image">
+                    <div class="card-info"><h2>Sudadera Hugo Boss Ed.</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 120.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                 <div class="product-card" data-product-id="vcarb-bag">
+                    <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Bolsa+Deporte" alt="Bolsa" class="card-image">
+                    <div class="card-info"><h2>Bolsa de Deporte</h2><p class="card-category">Accesorios</p><p class="card-price">€ 60.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                 <div class="product-card" data-product-id="vcarb-bottle">
+                    <img src="https://via.placeholder.com/300/FFFFFF/000099?text=Botella+RB" alt="Botella" class="card-image">
+                    <div class="card-info"><h2>Botella Metálica</h2><p class="card-category">Accesorios</p><p class="card-price">€ 25.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
+            <h2 class="team-heading sauber">🟢 Stake F1 Team Kick Sauber</h2>
+            <div class="product-list">
+                 <div class="product-card" data-product-id="sau-hul-cap">
+                    <img src="https://via.placeholder.com/300/000000/52E438?text=Gorra+Hulkenberg" alt="Gorra Hulk" class="card-image">
+                    <div class="card-info"><h2>Gorra Nico Hülkenberg</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                 <div class="product-card" data-product-id="sau-bor-cap">
+                    <img src="https://via.placeholder.com/300/52E438/000000?text=Gorra+Bortoleto" alt="Gorra Bortoleto" class="card-image">
+                    <div class="card-info"><h2>Gorra Gabriel Bortoleto</h2><p class="card-category">Accesorios</p><p class="card-price">€ 45.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="sau-shirt">
+                    <img src="https://via.placeholder.com/300/000000/52E438?text=Camiseta+Stake" alt="Camiseta Stake" class="card-image">
+                    <div class="card-info"><h2>Camiseta Team Black</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 65.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="sau-jacket">
+                    <img src="https://via.placeholder.com/300/52E438/000000?text=Chaqueta+Neon" alt="Chaqueta" class="card-image">
+                    <div class="card-info"><h2>Chaqueta Lluvia Neón</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 140.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                 <div class="product-card" data-product-id="sau-key">
+                    <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Llavero" alt="Llavero" class="card-image">
+                    <div class="card-info"><h2>Llavero Carbono</h2><p class="card-category">Accesorios</p><p class="card-price">€ 15.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="sau-model">
+                    <img src="https://via.placeholder.com/300/52E438/000000?text=C45+Model" alt="Modelo C45" class="card-image">
+                    <div class="card-info"><h2>Modelo C45 (1:43)</h2><p class="card-category">Coleccionables</p><p class="card-price">€ 85.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
+            <h2 class="team-heading haas">⚪ MoneyGram Haas F1 Team</h2>
+             <div class="product-list">
+                 <div class="product-card" data-product-id="haas-oco-cap">
+                    <img src="https://via.placeholder.com/300/B6BABD/000000?text=Gorra+Ocon" alt="Gorra Ocon" class="card-image">
+                    <div class="card-info"><h2>Gorra Esteban Ocon</h2><p class="card-category">Accesorios</p><p class="card-price">€ 40.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                 <div class="product-card" data-product-id="haas-bea-cap">
+                    <img src="https://via.placeholder.com/300/FFFFFF/000000?text=Gorra+Bearman" alt="Gorra Bearman" class="card-image">
+                    <div class="card-info"><h2>Gorra Oliver Bearman</h2><p class="card-category">Accesorios</p><p class="card-price">€ 40.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="haas-shirt">
+                    <img src="https://via.placeholder.com/300/FFFFFF/000000?text=Camiseta+Haas" alt="Camiseta Haas" class="card-image">
+                    <div class="card-info"><h2>Camiseta Equipo Oficial</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 60.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="haas-polo">
+                    <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Polo+Haas" alt="Polo Haas" class="card-image">
+                    <div class="card-info"><h2>Polo Team Haas</h2><p class="card-category">Ropa de Equipo</p><p class="card-price">€ 80.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="haas-mug">
+                    <img src="https://via.placeholder.com/300/B6BABD/000000?text=Taza+Haas" alt="Taza" class="card-image">
+                    <div class="card-info"><h2>Taza MoneyGram</h2><p class="card-category">Hogar</p><p class="card-price">€ 18.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+                <div class="product-card" data-product-id="haas-flag">
+                    <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Bandera+Haas" alt="Bandera" class="card-image">
+                    <div class="card-info"><h2>Bandera Equipo Grande</h2><p class="card-category">Fan Zone</p><p class="card-price">€ 25.00</p><button class="view-btn">Ver Detalles</button></div>
+                </div>
+            </div>
+
         </div>
     </main>
 
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2023 Tienda F1. Todos los derechos reservados. | <a href="nosotros.html">Sobre Nosotros</a></p>
+            <p>&copy; 2025 Tienda F1. Todos los derechos reservados. | <a href="nosotros.html">Sobre Nosotros</a></p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Seguro - F1 Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Formula1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container" style="justify-content: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1200px-F1.svg.png" class="f1-logo" style="height: 30px;">
+            <span style="color: white; margin-left: 15px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Pasarela de Pago Segura</span>
+        </div>
+    </header>
+
+    <main class="container checkout-grid">
+        <section class="form-box">
+            <h2 style="margin-top:0; border-bottom: 2px solid #eee; padding-bottom: 10px;"><i class="fas fa-shipping-fast" style="color: var(--f1-red);"></i> 1. Datos de Envío</h2>
+            
+            <div class="form-group">
+                <label>Correo Electrónico</label>
+                <input type="email" placeholder="ejemplo@email.com" required>
+            </div>
+            
+            <div class="row">
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Juan" required>
+                </div>
+                <div class="form-group">
+                    <label>Apellidos</label>
+                    <input type="text" placeholder="Pérez" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Dirección de Entrega</label>
+                <input type="text" placeholder="Calle, Número, Piso..." required>
+            </div>
+            
+            <div class="row">
+                <div class="form-group">
+                    <label>Ciudad</label>
+                    <input type="text" placeholder="Madrid" required>
+                </div>
+                <div class="form-group">
+                    <label>Código Postal</label>
+                    <input type="text" placeholder="28001" required>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 40px; border-bottom: 2px solid #eee; padding-bottom: 10px;"><i class="far fa-credit-card" style="color: var(--f1-red);"></i> 2. Método de Pago</h2>
+            
+            <div class="credit-card-visual">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                    <span style="opacity: 0.8; font-size: 0.9rem;">Tarjeta de Crédito/Débito</span>
+                    <i class="fab fa-cc-visa fa-2x"></i>
+                </div>
+                <div class="card-number-display">**** **** **** ****</div>
+                <div style="display: flex; justify-content: space-between; margin-top: 15px;">
+                    <div style="font-size: 0.7rem; opacity: 0.8;">TITULAR<br><span style="font-size: 0.9rem; font-weight: bold;">NOMBRE APELLIDO</span></div>
+                    <div style="font-size: 0.7rem; opacity: 0.8;">EXPIRA<br><span style="font-size: 0.9rem; font-weight: bold;">MM/AA</span></div>
+                </div>
+            </div>
+
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label>Número de Tarjeta</label>
+                    <div style="position: relative;">
+                        <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" required style="padding-left: 45px;">
+                        <i class="far fa-credit-card" style="position: absolute; left: 15px; top: 14px; color: #888;"></i>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label>Vencimiento (MM/AA)</label>
+                        <input type="text" id="cardExpiry" placeholder="MM/AA" maxlength="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label>CVV / CVC</label>
+                        <div style="position: relative;">
+                            <input type="text" placeholder="123" maxlength="3" required>
+                            <i class="fas fa-question-circle" style="position: absolute; right: 15px; top: 14px; color: #ccc;" title="Código de 3 dígitos al reverso"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="pay-btn" id="submitBtn">
+                    <span id="btnText">Pagar Ahora</span>
+                    <div class="spinner"></div>
+                </button>
+            </form>
+        </section>
+
+        <section class="summary-box">
+            <h2 style="margin-top: 0;">Resumen del Pedido</h2>
+            
+            <div style="display: flex; gap: 15px; margin-bottom: 20px; align-items: center;">
+                <div style="background: white; border: 1px solid #ddd; width: 60px; height: 60px; border-radius: 5px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1200px-F1.svg.png" style="width: 40px; filter: invert(1);">
+                </div>
+                <div>
+                    <p style="margin: 0; font-weight: bold; font-size: 0.95rem;">Cesta F1 2025</p>
+                    <p style="margin: 5px 0 0 0; font-size: 0.85rem; color: #666;">Artículos varios</p>
+                </div>
+            </div>
+            
+            <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+            
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.95rem;">
+                <span>Subtotal</span>
+                <span>Calculando...</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.95rem;">
+                <span>Envío Express (24h)</span>
+                <span>€ 15.00</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.95rem; color: var(--f1-red);">
+                <span>Descuento</span>
+                <span>- € 0.00</span>
+            </div>
+            
+            <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+            
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 1.1rem; font-weight: bold;">Total a Pagar</span>
+                <span style="font-size: 1.6rem; font-weight: bold; color: var(--f1-dark);">€ <span id="finalTotal">--.--</span></span>
+            </div>
+
+            <div style="background-color: #e8f0fe; color: #1967d2; padding: 15px; border-radius: 5px; margin-top: 30px; font-size: 0.85rem; display: flex; gap: 10px; align-items: start;">
+                <i class="fas fa-shield-alt" style="margin-top: 3px;"></i>
+                <div>
+                    <strong>Pago 100% Seguro</strong><br>
+                    Tus datos están protegidos con encriptación SSL de 256-bits.
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px; color: #ccc; font-size: 2rem;">
+                <i class="fab fa-cc-visa"></i> <i class="fab fa-cc-mastercard"></i> <i class="fab fa-cc-amex"></i>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Tienda F1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Simular precio total (Un número aleatorio realista si no viene del carrito real)
+        // En un caso real, leeríamos localStorage o la URL
+        document.getElementById('finalTotal').innerText = "284.99"; 
+
+        // 2. Formato visual de tarjeta (espacios cada 4 números)
+        const cardInput = document.getElementById('cardNumber');
+        const cardDisplay = document.querySelector('.card-number-display');
+        
+        cardInput.addEventListener('input', function (e) {
+            // Elimina no dígitos y limita longitud
+            let value = e.target.value.replace(/[^\d]/g, '').substring(0,16);
+            // Añade espacios cada 4
+            let formatted = value.replace(/(.{4})/g, '$1 ').trim();
+            e.target.value = formatted;
+            
+            // Actualiza la tarjeta visual
+            cardDisplay.textContent = formatted || '**** **** **** ****';
+        });
+
+        // 3. Formato fecha (auto barra /)
+        document.getElementById('cardExpiry').addEventListener('input', function (e) {
+            let value = e.target.value.replace(/[^\d]/g, '');
+            if (value.length >= 2) {
+                e.target.value = value.substring(0,2) + '/' + value.substring(2,4);
+            } else {
+                e.target.value = value;
+            }
+        });
+
+        // 4. Simulación de Proceso de Pago
+        document.getElementById('paymentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const spinner = document.querySelector('.spinner');
+
+            // Estado de carga visual
+            btn.disabled = true;
+            btnText.textContent = "Procesando...";
+            spinner.style.display = 'block';
+            btn.style.background = '#444'; // Cambia a gris
+
+            // Simular espera de servidor (3 segundos)
+            setTimeout(() => {
+                // ÉXITO
+                document.body.innerHTML = `
+                    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; font-family:'Formula1', sans-serif; text-align:center;">
+                        <div style="font-size: 5rem; color: #28a745; margin-bottom: 20px;"><i class="fas fa-check-circle"></i></div>
+                        <h1 style="color: #15151E; font-size: 2.5rem; margin-bottom: 10px;">¡Pago Realizado!</h1>
+                        <p style="font-size: 1.2rem; color: #666; margin-bottom: 30px;">Tu pedido #F1-2025-X99 ha sido confirmado.</p>
+                        <a href="catalogo.html" style="background: #E10600; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Volver a la Tienda</a>
+                    </div>
+                `;
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
