@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda F1 - Casco de Lewis Hamilton</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Formula1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="catalogo.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1200px-F1.svg.png" alt="Logo F1" class="f1-logo"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="catalogo.html">Tienda</a></li>
+                    <li><a href="#">Equipos</a></li>
+                    <li><a href="#">Pilotos</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-detail-page">
+        <div class="container product-grid">
+            <div class="product-image-gallery">
+                <img src="https://i.ibb.co/L5hYh81/helmet-main.webp" alt="Casco de Lewis Hamilton - Vista Principal" class="main-product-image">
+                <div class="thumbnail-images">
+                    <img src="https://i.ibb.co/8Y7Y3Vj/helmet-thumb1.webp" alt="Casco de Lewis Hamilton - Miniatura 1" class="thumbnail active">
+                    <img src="https://i.ibb.co/tZ52hS8/helmet-thumb2.webp" alt="Casco de Lewis Hamilton - Miniatura 2" class="thumbnail">
+                    <img src="https://i.ibb.co/sKkL3S4/helmet-thumb3.webp" alt="Casco de Lewis Hamilton - Miniatura 3" class="thumbnail">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Casco Réplica Lewis Hamilton 2023 - Mercedes-AMG F1</h1>
+                <p class="product-category">Coleccionables / Cascos</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (4.5 Estrellas - 128 Reseñas)
+                </div>
+                
+                <div class="product-price-section">
+                    <p class="base-price-label">Precio Unitario: <span id="base-price">€ 499.99</span></p>
+                    <p class="product-price">Subtotal: <span id="subtotal-price">€ 499.99</span></p> 
+                </div>
+
+                <div class="product-options">
+                    <div class="option-group">
+                        <label for="size-select">Talla:</label>
+                        <select id="size-select" class="select-box">
+                            <option value="S">S</option>
+                            <option value="M" selected>M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label for="quantity-select">Cantidad:</label>
+                        <input type="number" id="quantity-select" class="input-number" value="1" min="1">
+                    </div>
+                </div>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
+                <a href="pago.html" class="buy-now-btn">Comprar Ahora</a>
+
+                <div class="product-description">
+                    <h2>Descripción del Producto</h2>
+                    <p>Sumérgete en el mundo de la Fórmula 1 con esta réplica oficial del casco de Lewis Hamilton de la temporada 2023. Fabricado con detalles excepcionales, este casco de tamaño completo es una pieza imprescindible para cualquier fanático o coleccionista de Mercedes-AMG F1.</p>
+                    <ul>
+                        <li>Escala 1:1, réplica fiel del diseño original.</li>
+                        <li>Materiales de alta calidad y acabado premium.</li>
+                        <li>Visera tintada y detalles auténticos del patrocinador.</li>
+                        <li>Base de exhibición incluida.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Tienda F1. Todos los derechos reservados. | <a href="nosotros.html">Sobre Nosotros</a></p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="producto.js"></script>
 </body>
 </html>
