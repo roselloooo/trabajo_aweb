@@ -1,56 +1,59 @@
-// carrito.js
-
 document.addEventListener('DOMContentLoaded', () => {
-    updateCartTotal();
+    renderCart();
 });
 
-function updateCartTotal() {
+function renderCart() {
+    const cartItemsContainer = document.querySelector('.cart-items');
+    const subtotalEl = document.getElementById('cartSubtotal');
+    const totalEl = document.getElementById('cartTotal');
+    
+    // Leemos la memoria
+    let cart = JSON.parse(localStorage.getItem('f1Cart')) || [];
+    
+    // Limpiamos el contenedor (borramos los ejemplos falsos)
+    cartItemsContainer.innerHTML = '';
+
     let subtotal = 0;
     const shipping = 15.00;
 
-    // Seleccionamos todos los items del carrito
-    const items = document.querySelectorAll('.cart-item');
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p style="text-align:center; padding:20px;">Tu carrito está vacío 🏎️💨</p>';
+        subtotalEl.textContent = "€ 0.00";
+        totalEl.textContent = "€ 0.00";
+        return;
+    }
 
-    items.forEach(item => {
-        // Obtenemos el precio base
-        const priceElement = item.querySelector('.cart-price');
-        const price = parseFloat(priceElement.getAttribute('data-price'));
-        
-        // Obtenemos la cantidad
-        const qtyInput = item.querySelector('input[type="number"]');
-        const qty = parseInt(qtyInput.value);
+    // Creamos el HTML para cada producto guardado
+    cart.forEach((item, index) => {
+        // Limpiamos precio para calcular
+        const priceNum = parseFloat(item.price.replace('€', '').trim());
+        const itemTotal = priceNum * item.qty;
+        subtotal += itemTotal;
 
-        // Sumamos al subtotal
-        subtotal += (price * qty);
+        const html = `
+            <div class="cart-item">
+                <img src="${item.img}" alt="${item.title}" class="cart-img">
+                <div class="cart-details">
+                    <h3>${item.title}</h3>
+                    <p class="cart-meta">Cantidad: ${item.qty}</p>
+                </div>
+                <div class="cart-right">
+                    <p class="cart-price">€ ${itemTotal.toFixed(2)}</p>
+                    <button class="delete-btn" onclick="removeFromCart(${index})"><i class="fas fa-trash"></i> Eliminar</button>
+                </div>
+            </div>
+        `;
+        cartItemsContainer.innerHTML += html;
     });
 
-    // Actualizamos el HTML
-    const total = subtotal + shipping;
-
-    // Si no hay items, el total es 0
-    if (items.length === 0) {
-        document.getElementById('cartSubtotal').textContent = "€ 0.00";
-        document.getElementById('cartTotal').textContent = "€ 0.00";
-    } else {
-        document.getElementById('cartSubtotal').textContent = "€ " + subtotal.toFixed(2);
-        document.getElementById('cartTotal').textContent = "€ " + total.toFixed(2);
-    }
+    // Actualizamos totales
+    subtotalEl.textContent = "€ " + subtotal.toFixed(2);
+    totalEl.textContent = "€ " + (subtotal + shipping).toFixed(2);
 }
 
-function removeItem(itemId) {
-    const item = document.getElementById(itemId);
-    if (item) {
-        // Animación simple para eliminar
-        item.style.opacity = '0';
-        setTimeout(() => {
-            item.remove();
-            updateCartTotal(); // Recalcular precio
-            
-            // Si nos quedamos sin productos
-            if (document.querySelectorAll('.cart-item').length === 0) {
-                alert("Tu carrito está vacío. Volviendo a la tienda.");
-                window.location.href = 'catalogo.html';
-            }
-        }, 300);
-    }
+function removeFromCart(index) {
+    let cart = JSON.parse(localStorage.getItem('f1Cart')) || [];
+    cart.splice(index, 1); // Quitar elemento
+    localStorage.setItem('f1Cart', JSON.stringify(cart)); // Guardar cambios
+    renderCart(); // Volver a pintar
 }
