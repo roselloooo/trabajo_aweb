@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Producto - F1 Store</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Formula1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
             <div class="logo">
-                <a href="catalogo.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1200px-F1.svg.png" alt="Logo F1" class="f1-logo"></a>
+                <a href="catalogo.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1200px-F1.svg.png" alt="Logo F1" class="f1-logo">
+                </a>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -31,11 +33,11 @@
     <main class="product-detail-page">
         <div class="container product-grid">
             
-            <div class="product-image-gallery">
+            <div class="product-image-gallery" data-aos="fade-right">
                 <img id="mainImage" src="" alt="Cargando producto..." class="main-product-image">
             </div>
 
-            <div class="product-info">
+            <div class="product-info" data-aos="fade-left">
                 <h1 id="productTitle" class="product-title">Cargando...</h1>
                 <p id="productCategory" class="product-category">...</p>
                 
@@ -50,9 +52,9 @@
                 </div>
 
                 <div class="product-options">
-                    <div class="option-group">
-                        <label>Talla:</label>
-                        <select class="select-box">
+                    <div class="option-group" id="sizeSelector">
+                        <label id="sizeLabel">Talla:</label>
+                        <select class="select-box" id="sizeOptions">
                             <option>XS</option>
                             <option>S</option>
                             <option selected>M</option>
@@ -61,9 +63,10 @@
                             <option>XXL</option>
                         </select>
                     </div>
+                    
                     <div class="option-group">
                         <label>Cantidad:</label>
-                        <input type="number" id="quantityInput" class="input-number" value="1" min="1">
+                        <input type="number" id="quantityInput" class="input-number" value="1" min="1" max="6">
                     </div>
                 </div>
 
@@ -74,10 +77,10 @@
                     <h2>Descripción del Producto</h2>
                     <p id="productDesc">Viste la pasión de la Fórmula 1 con este artículo oficial de la temporada 2025. Diseñado con los más altos estándares de calidad y con los logotipos oficiales de la escudería y patrocinadores.</p>
                     <ul>
-                        <li>Material transpirable de alta calidad.</li>
+                        <li>Material de alta calidad y durabilidad.</li>
                         <li>Logotipos estampados/bordados de alta resistencia.</li>
                         <li>Diseño auténtico utilizado en el paddock.</li>
-                        <li>Producto 100% Oficial.</li>
+                        <li>Producto 100% Oficial con etiqueta de autenticidad.</li>
                     </ul>
                 </div>
             </div>
@@ -95,6 +98,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    
     <script src="producto.js"></script>
 </body>
 </html>

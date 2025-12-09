@@ -1,0 +1,86 @@
+[
+  {
+    "id": "fer-lec-jacket",
+    "title": "Chaqueta Leclerc Fila 2025",
+    "price": 189.99,
+    "category": "Ropa Premium",
+    "stock": 50
+  },
+  {
+    "id": "fer-lec-cap",
+    "title": "Gorra Charles Leclerc #16",
+    "price": 50.00,
+    "category": "Accesorios",
+    "stock": 100
+  },
+  {
+    "id": "fer-lec-shirt",
+    "title": "Camiseta Leclerc Mónaco Ed.",
+    "price": 75.00,
+    "category": "Ropa de Piloto",
+    "stock": 80
+  },
+  {
+    "id": "fer-ham-cap",
+    "title": "Gorra Lewis Hamilton #44",
+    "price": 55.00,
+    "category": "Accesorios",
+    "stock": 120
+  },
+  {
+    "id": "fer-ham-shirt",
+    "title": "Camiseta Hamilton Debut",
+    "price": 80.00,
+    "category": "Ropa de Piloto",
+    "stock": 90
+  },
+  {
+    "id": "fer-ham-model",
+    "title": "Modelo SF-25 Hamilton (1:43)",
+    "price": 95.00,
+    "category": "Coleccionables",
+    "stock": 20
+  },
+  {
+    "id": "fer-polo",
+    "title": "Polo Oficial Scuderia 2025",
+    "price": 95.00,
+    "category": "Ropa de Equipo",
+    "stock": 60
+  },
+  {
+    "id": "fer-rain",
+    "title": "Chubasquero Paddock",
+    "price": 160.00,
+    "category": "Ropa Técnica",
+    "stock": 30
+  },
+  {
+    "id": "fer-bag",
+    "title": "Mochila Puma Ferrari",
+    "price": 85.00,
+    "category": "Accesorios",
+    "stock": 40
+  },
+  {
+    "id": "fer-key",
+    "title": "Llavero Cavallino Rampante",
+    "price": 20.00,
+    "category": "Accesorios",
+    "stock": 200
+  },
+  {
+    "id": "am-alo-cap",
+    "title": "Gorra Alonso 2025",
+    "price": 50.00,
+    "category": "Accesorios",
+    "stock": 150
+  },
+  {
+    "id": "rbr-ver-cap",
+    "title": "Gorra Max Verstappen #1",
+    "price": 50.00,
+    "category": "Accesorios",
+    "stock": 100
+  }
+]
