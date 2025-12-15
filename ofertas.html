@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas y Rebajas - F1 Store</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Formula1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -19,8 +18,8 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="catalogo.html">Tienda</a></li>
-                    <li><a href="#">Equipos</a></li>
-                    <li><a href="#">Pilotos</a></li>
+                    <li><a href="#" onclick="alert('Ir al catálogo para filtrar por equipos'); return false;">Equipos</a></li>
+                    <li><a href="#" onclick="alert('Ir al catálogo para filtrar por pilotos'); return false;">Pilotos</a></li>
                     <li><a href="ofertas.html" class="active" style="color: var(--f1-red);">Ofertas</a></li>
                     <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
                 </ul>
@@ -128,6 +127,39 @@
         </div>
     </footer>
 
-    <script src="catalogo.js"></script>
+    <script>
+        document.addEventListener('click', function(e) {
+            // Buscamos si el clic fue en una tarjeta o en un elemento dentro de ella
+            const card = e.target.closest('.product-card');
+            
+            if (card) {
+                // 1. Recogemos los datos básicos
+                const pid = card.getAttribute('data-product-id');
+                const imgElement = card.querySelector('img');
+                const titleElement = card.querySelector('h2'); 
+                
+                // 2. BUSCAMOS EL PRECIO REBAJADO (.sale-price)
+                // Si no hay oferta, busca el precio normal (.card-price) como plan B
+                const priceElement = card.querySelector('.sale-price') || card.querySelector('.card-price'); 
+
+                // Si falta algo importante, paramos para no dar error
+                if (!pid || !imgElement || !titleElement || !priceElement) return;
+
+                const imgSrc = imgElement.src; 
+                const title = titleElement.innerText;
+                const price = priceElement.innerText; // "€ 132.99"
+                
+                // Categoría
+                let category = "Oferta F1";
+                const catElem = card.querySelector('.card-category');
+                if (catElem) category = catElem.innerText;
+
+                // 3. Redirigimos a index.html (página de detalle)
+                const url = `index.html?id=${pid}&img=${encodeURIComponent(imgSrc)}&title=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}&cat=${encodeURIComponent(category)}`;
+                
+                window.location.href = url;
+            }
+        });
+    </script>
 </body>
 </html>

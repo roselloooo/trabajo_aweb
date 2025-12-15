@@ -39,6 +39,24 @@
                     <i class="fas fa-search"></i>
                     <input type="text" id="searchInput" placeholder="Buscar por piloto, equipo o producto...">
                 </div>
+
+                <div class="filters-control-bar" style="background: #1f1f1f; padding: 15px; margin: 20px auto; max-width: 1200px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; color: white; flex-wrap: wrap; gap: 15px; border-left: 5px solid #e10600;">
+    
+                    <div style="font-weight: bold; font-size: 1.1em;">
+                        <i class="fas fa-sliders-h"></i> Filtrar y Ordenar
+                    </div>
+                
+                    <div style="display: flex; gap: 20px; align-items: center;">
+                        <select id="priceSort" style="padding: 8px; border-radius: 4px; border: none; background: #333; color: white; cursor: pointer;">
+                            <option value="default">Relevancia</option>
+                            <option value="asc">Precio: Más bajo primero</option>
+                            <option value="desc">Precio: Más alto primero</option>
+                        </select>
+                
+                       
+                    </div>
+                
+                </div>
                 <div class="filter-tags">
                     <button onclick="filterProducts('all')" class="tag active">Todos</button>
                     <button onclick="filterProducts('Ropa')" class="tag">Ropa</button>
