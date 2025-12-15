@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Formula1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -49,6 +50,7 @@
                 <div class="product-price-section">
                     <p class="base-price-label">Precio Unitario: <span id="basePrice">--</span></p>
                     <p class="product-price">Total: <span id="subtotalPrice">--</span></p> 
+                    <p id="stockDisplay" style="color: #0090FF; font-weight: bold; font-size: 0.9rem; margin-top: 10px;">Cargando stock...</p>
                 </div>
 
                 <div class="product-options">
@@ -100,7 +102,6 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
-    
     <script src="producto.js"></script>
 </body>
 </html>

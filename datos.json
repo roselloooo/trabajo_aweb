@@ -1,86 +1,89 @@
 [
-  {
-    "id": "fer-lec-jacket",
-    "title": "Chaqueta Leclerc Fila 2025",
-    "price": 189.99,
-    "category": "Ropa Premium",
-    "stock": 50
-  },
-  {
-    "id": "fer-lec-cap",
-    "title": "Gorra Charles Leclerc #16",
-    "price": 50.00,
-    "category": "Accesorios",
-    "stock": 100
-  },
-  {
-    "id": "fer-lec-shirt",
-    "title": "Camiseta Leclerc Mónaco Ed.",
-    "price": 75.00,
-    "category": "Ropa de Piloto",
-    "stock": 80
-  },
-  {
-    "id": "fer-ham-cap",
-    "title": "Gorra Lewis Hamilton #44",
-    "price": 55.00,
-    "category": "Accesorios",
-    "stock": 120
-  },
-  {
-    "id": "fer-ham-shirt",
-    "title": "Camiseta Hamilton Debut",
-    "price": 80.00,
-    "category": "Ropa de Piloto",
-    "stock": 90
-  },
-  {
-    "id": "fer-ham-model",
-    "title": "Modelo SF-25 Hamilton (1:43)",
-    "price": 95.00,
-    "category": "Coleccionables",
-    "stock": 20
-  },
-  {
-    "id": "fer-polo",
-    "title": "Polo Oficial Scuderia 2025",
-    "price": 95.00,
-    "category": "Ropa de Equipo",
-    "stock": 60
-  },
-  {
-    "id": "fer-rain",
-    "title": "Chubasquero Paddock",
-    "price": 160.00,
-    "category": "Ropa Técnica",
-    "stock": 30
-  },
-  {
-    "id": "fer-bag",
-    "title": "Mochila Puma Ferrari",
-    "price": 85.00,
-    "category": "Accesorios",
-    "stock": 40
-  },
-  {
-    "id": "fer-key",
-    "title": "Llavero Cavallino Rampante",
-    "price": 20.00,
-    "category": "Accesorios",
-    "stock": 200
-  },
-  {
-    "id": "am-alo-cap",
-    "title": "Gorra Alonso 2025",
-    "price": 50.00,
-    "category": "Accesorios",
-    "stock": 150
-  },
-  {
-    "id": "rbr-ver-cap",
-    "title": "Gorra Max Verstappen #1",
-    "price": 50.00,
-    "category": "Accesorios",
-    "stock": 100
-  }
+  { "id": "fer-lec-jacket", "title": "Chaqueta Leclerc Fila 2025", "stock": 25, "price": "189.99" },
+  { "id": "fer-lec-cap", "title": "Gorra Charles Leclerc #16", "stock": 150, "price": "50.00" },
+  { "id": "fer-lec-shirt", "title": "Camiseta Leclerc Mónaco Ed.", "stock": 80, "price": "75.00" },
+  { "id": "fer-ham-cap", "title": "Gorra Lewis Hamilton #44", "stock": 200, "price": "55.00" },
+  { "id": "fer-ham-shirt", "title": "Camiseta Hamilton Debut", "stock": 120, "price": "80.00" },
+  { "id": "fer-ham-model", "title": "Modelo SF-25 Hamilton (1:43)", "stock": 3, "price": "95.00" },
+  { "id": "fer-polo", "title": "Polo Oficial Scuderia 2025", "stock": 60, "price": "95.00" },
+  { "id": "fer-rain", "title": "Chubasquero Paddock", "stock": 30, "price": "160.00" },
+  { "id": "fer-bag", "title": "Mochila Puma Ferrari", "stock": 4, "price": "85.00" },
+  { "id": "fer-key", "title": "Llavero Cavallino Rampante", "stock": 0, "price": "20.00" },
+
+  { "id": "am-alo-cap", "title": "Gorra Alonso 2025", "stock": 180, "price": "50.00" },
+  { "id": "am-alo-shirt", "title": "Camiseta Fernando Alonso", "stock": 90, "price": "70.00" },
+  { "id": "am-alo-helmet", "title": "Mini Casco Alonso (1:2)", "stock": 0, "price": "180.00" },
+  { "id": "am-str-cap", "title": "Gorra Lance Stroll #18", "stock": 50, "price": "45.00" },
+  { "id": "am-str-shirt", "title": "Camiseta Lance Stroll", "stock": 40, "price": "65.00" },
+  { "id": "am-jacket", "title": "Chaqueta Softshell AM", "stock": 20, "price": "150.00" },
+  { "id": "am-gilet", "title": "Chaleco Acolchado Aramco", "stock": 15, "price": "110.00" },
+  { "id": "am-bottle", "title": "Botella de Agua Oficial", "stock": 100, "price": "25.00" },
+  { "id": "am-umbrella", "title": "Paraguas de Golf AM", "stock": 25, "price": "60.00" },
+
+  { "id": "rbr-ver-cap", "title": "Gorra Max Verstappen #1", "stock": 160, "price": "50.00" },
+  { "id": "rbr-ver-orange", "title": "Camiseta Orange Army", "stock": 140, "price": "65.00" },
+  { "id": "rbr-ver-hoodie", "title": "Sudadera Campeón", "stock": 0, "price": "110.00" },
+  { "id": "rbr-tsu-cap", "title": "Gorra Plana Yuki Tsunoda", "stock": 70, "price": "45.00" },
+  { "id": "rbr-tsu-shirt", "title": "Camiseta Yuki RBR 2025", "stock": 60, "price": "75.00" },
+  { "id": "rbr-softshell", "title": "Chaqueta Castore Team", "stock": 15, "price": "180.00" },
+  { "id": "rbr-backpack", "title": "Mochila Oficial RBR", "stock": 30, "price": "85.00" },
+  { "id": "rbr-model", "title": "Modelo RB21 (1:18)", "stock": 8, "price": "140.00" },
+  { "id": "rbr-mug", "title": "Taza Red Bull Racing", "stock": 80, "price": "22.00" },
+  { "id": "rbr-socks", "title": "Pack Calcetines Team", "stock": 120, "price": "35.00" },
+
+  { "id": "mer-rus-cap", "title": "Gorra George Russell #63", "stock": 90, "price": "45.00" },
+  { "id": "mer-rus-hoodie", "title": "Sudadera Russell 63", "stock": 40, "price": "115.00" },
+  { "id": "mer-rus-shirt", "title": "Camiseta Russell GR63", "stock": 25, "price": "75.00" },
+  { "id": "antonelli-helmet", "title": "Casco Kimi Debut 2025", "stock": 2, "price": "480.00" },
+  { "id": "mer-kimi-shirt", "title": "Camiseta Kimi Antonelli", "stock": 100, "price": "70.00" },
+  { "id": "mer-kimi-cap", "title": "Gorra Kimi Antonelli #12", "stock": 110, "price": "45.00" },
+  { "id": "mer-tshirt", "title": "Camiseta Team Fanwear", "stock": 50, "price": "80.00" },
+  { "id": "mer-jacket", "title": "Chaqueta Lluvia AMG", "stock": 10, "price": "190.00" },
+  { "id": "mer-mug", "title": "Taza Térmica Mercedes", "stock": 75, "price": "25.00" },
+  { "id": "mer-wallet", "title": "Cartera de Piel AMG", "stock": 20, "price": "60.00" },
+
+  { "id": "mcl-nor-cap", "title": "Gorra Lando Neón", "stock": 4, "price": "45.00" },
+  { "id": "mcl-nor-shirt", "title": "Camiseta Lando Norris #4", "stock": 150, "price": "75.00" },
+  { "id": "mcl-nor-hoodie", "title": "Sudadera LN4 Quadrant", "stock": 80, "price": "110.00" },
+  { "id": "mcl-pia-cap", "title": "Gorra Oscar Piastri #81", "stock": 130, "price": "45.00" },
+  { "id": "mcl-pia-shirt", "title": "Camiseta Piastri 2025", "stock": 100, "price": "75.00" },
+  { "id": "mcl-polo", "title": "Polo Oficial McLaren", "stock": 40, "price": "90.00" },
+  { "id": "mcl-jacket", "title": "Chaqueta Impermeable", "stock": 25, "price": "160.00" },
+  { "id": "mcl-bottle", "title": "Botella Hidratación", "stock": 60, "price": "28.00" },
+  { "id": "mcl-model", "title": "Modelo MCL39 (1:18)", "stock": 5, "price": "150.00" },
+  { "id": "mcl-phone", "title": "Funda Móvil Carbono", "stock": 40, "price": "35.00" },
+
+  { "id": "wil-sai-cap", "title": "Gorra Carlos Sainz Williams", "stock": 120, "price": "45.00" },
+  { "id": "wil-sai-shirt", "title": "Camiseta Sainz", "stock": 90, "price": "70.00" },
+  { "id": "wil-alb-cap", "title": "Gorra Alex Albon", "stock": 80, "price": "45.00" },
+  { "id": "wil-hoodie", "title": "Sudadera Williams Heritage", "stock": 35, "price": "99.00" },
+  { "id": "wil-shirt", "title": "Camiseta Equipo 2025", "stock": 50, "price": "60.00" },
+  { "id": "wil-lanyard", "title": "Cordón Williams", "stock": 200, "price": "15.00" },
+
+  { "id": "alp-gas-cap", "title": "Gorra Pierre Gasly", "stock": 4, "price": "42.00" },
+  { "id": "alp-gas-shirt", "title": "Camiseta Gasly 10", "stock": 45, "price": "65.00" },
+  { "id": "alp-doo-shirt", "title": "Camiseta Jack Doohan", "stock": 50, "price": "65.00" },
+  { "id": "alp-team-shirt", "title": "Camiseta Equipo Alpine", "stock": 30, "price": "75.00" },
+  { "id": "alp-model", "title": "Modelo A525 (1:43)", "stock": 12, "price": "80.00" },
+  { "id": "alp-cap-team", "title": "Gorra Oficial Equipo", "stock": 40, "price": "40.00" },
+
+  { "id": "vcarb-law-cap", "title": "Gorra Liam Lawson", "stock": 55, "price": "40.00" },
+  { "id": "vcarb-had-cap", "title": "Gorra Isack Hadjar", "stock": 50, "price": "40.00" },
+  { "id": "vcarb-shirt", "title": "Camiseta Oficial Equipo", "stock": 40, "price": "70.00" },
+  { "id": "vcarb-hoodie", "title": "Sudadera Hugo Boss Ed.", "stock": 20, "price": "120.00" },
+  { "id": "vcarb-bottle", "title": "Red Bull RB21 GP Japon 2025 Yuki Tsunoda - Minichamps Escala 1:43", "stock": 30, "price": "25.00" },
+
+  { "id": "sau-hul-cap", "title": "Gorra Nico Hülkenberg", "stock": 65, "price": "45.00" },
+  { "id": "sau-bor-cap", "title": "Gorra Gabriel Bortoleto", "stock": 70, "price": "45.00" },
+  { "id": "sau-shirt", "title": "Camiseta Team Black", "stock": 35, "price": "65.00" },
+  { "id": "sau-jacket", "title": "Chaqueta Lluvia Neón", "stock": 15, "price": "140.00" },
+  { "id": "sau-key", "title": "Llavero Carbono", "stock": 150, "price": "15.00" },
+  { "id": "sau-model", "title": "Modelo C45 (1:43)", "stock": 10, "price": "85.00" },
+
+  { "id": "haas-oco-cap", "title": "Gorra Esteban Ocon", "stock": 60, "price": "40.00" },
+  { "id": "haas-bea-cap", "title": "Gorra Oliver Bearman", "stock": 65, "price": "40.00" },
+  { "id": "haas-shirt", "title": "Camiseta Equipo Oficial", "stock": 40, "price": "60.00" },
+  { "id": "haas-polo", "title": "Polo Team Haas", "stock": 25, "price": "80.00" },
+  { "id": "haas-mug", "title": "Taza MoneyGram", "stock": 50, "price": "18.00" },
+  { "id": "haas-flag", "title": "Bandera Equipo Grande", "stock": 30, "price": "25.00" }
 ]
